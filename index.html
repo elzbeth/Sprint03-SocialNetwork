@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lettering Life</title>
+  <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+  <link href="css/material-design-iconic-font.min.css" rel="stylesheet">
+  <link href="css/materialize.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <main>
+    <!--SPLASH-->
+    <div class="container-fluid hide">
+      <div class="row">
+        <div class="col s10 offset-s1">
+          <img id="splash" src="assets/images/splash.jpg" alt="lettering"/>
+        </div>
+      </div>
+    </div>
+    <!--/SPLASH-->
+    <!--LOGIN-->
+    <section id="main-container">
+      <div class="container">
+        <div class="row">
+          <div class="col s10 offset-s1">
+            <div class="row">
+              <div class="col m5 hide-on-small-only">
+                <img id="index-logo" src="assets/images/index-logo.jpg" alt="logo"/>
+              </div>
+              <div class="col s17 m7">
+                <div class="row">
+                  <div class="signup-box">
+                    <h1 class="lettering">Lettering Life</h1>
+                    <h3 class="flow-text">More than letters</h3>
+                    <form class="signup-form center">
+                      <div class="divider"></div>
+                      <div class="section">
+                        <div class="row center-align">
+                          <a class="btn btn-fb hide-on-small-only social-sign">Login with Facebook</a>
+                          <a class="btn btn-fb hide-on-med-and-up"><i class="fa fa-facebook"></i>&nbsp;Login</a>
+                          <a class="btn btn-tw hide-on-small-only social-sign">Login with Twitter</a>
+                          <a class="btn btn-tw hide-on-med-and-up"><i class="fa fa-twitter"></i>&nbsp;Login</a>
+                        </div>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="section mt-40 center-align">
+                        <div class="left-align">
+                        <label for="user-name"><i class="fa fa-user"></i>&nbsp; User Name<input type="text" name="username"/></label>
+                        <label for="user-name"><i class="fa fa-lock"></i>&nbsp;Password<input type="password" name="password"/></label>
+                      </div>
+                        <div class="row mb-20">
+                          <p class="center">Did you forget your password?
+                            <a href="#modal-recovery" class="btn modal-trigger btn-flat bolder" id="recovery-btn">Recover it!</a>
+                          </p>
+                        </div>
+                        <button class="btn waves-effect waves-light " type="submit">Login</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="row mt-40">
+                  <div class="login-box left">
+                    <p>Don't you have an account yet?</p>
+                    <a id="signup" class="btn btn-flat modal-trigger text-align left" href="#modal-login">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/LOGIN -->
+    <!--NAVBAR-->
+    <!-- <section>
+      <nav>
+        <ul class="navbar">
+          <li><a>NEWS FEED</a></li>
+          <li><a>FRIENDS</a></li>
+          <li><a>SETTINGS</a></li>
+          <li><a class="right">LOGOUT</a></li>
+        </ul>
+      </nav>
+    </section> -->
+    <!--/NAVBAR-->
+    <!--FOOTER-->
+    <footer class="site-footer">
+      <div class="container">
+        <!-- languages-->
+        <div class="row">
+          <div class="col s12 l3 center-align">
+            <a class="dropdown-button btn btn-flat bolder mb-40" href="#" data-activates="language">Language</a>
+            <ul id="language" class="dropdown-content">
+              <li><a href="#!">English</a></li>
+              <li><a href="#!">Spanish</a></li>
+            </ul>
+          </div>
+        <!-- /languages-->
+        <!--copyright-->
+        <div class="row center">
+          <div class="col s12 center mt-40">
+            &copy;Laboratoria 2018
+          </div>
+        </div>
+        <!--/copyright-->
+      </div>
+    </footer>
+    <!--/FOOTER-->
+    <!--MODALS-->
+    <!--MODAL SIGN-UP-->
+    <div id="modal-login" class="modal container-login center responsive flow-text">
+      <div class="modal-content mt-40">
+        <h3 class="lettering">Lettering Life</h3>
+        <h5 class="flow-text mb-20">More than letters</h5>
+        <form class="signup-form center">
+          <div class="divider"></div>
+          <div class="section ">
+            <div class="row center-align">
+              <a class="btn btn-fb hide-on-small-only social-sign">Sign Up with Facebook</a>
+              <a class="btn btn-fb hide-on-med-and-up"><i class="fa fa-facebook"></i>&nbsp;Sign Up</a>
+              <a class="btn btn-tw hide-on-small-only social-sign">Sign Up with Twitter</a>
+              <a class="btn btn-tw hide-on-med-and-up"><i class="fa fa-twitter"></i>&nbsp;Sign Up</a>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <form>
+            <div class="input-field col s6 offset-s3 mt-20">
+              <input id="user-name" type="text" class="validate">
+              <label for="user-name"><i class="fa fa-user"></i>&nbsp; Full name</label>
+            </div>
+            <div class="input-field col s6 offset-s3">
+              <input id="UserName" type="text" class="validate">
+              <label for="UserName"><i class="fa fa-star"></i>&nbsp; User name</label>
+            </div>
+            <div class="input-field col s6 offset-s3 mt-20">
+              <input id="email" type="email" class="validate">
+              <label for="email"><i class="fa fa-envelope"></i>&nbsp; Email</label>
+            </div>
+            <div class="input-field col s6 offset-s3 mt-20">
+              <input id="Password" type="password" class="validate">
+              <label for="Password"><i class="fa fa-lock"></i>&nbsp; Password</label>
+            </div>
+            <button class="btn">SIGN UP</button>
+          </form>
+        </div>
+        <div class="row">
+          <a href="#!" class="modal-action modal-close text-gray right">
+            <i class="fa fa-times responsive-img"></i>
+            <strong>Close</strong>
+          </a>
+        </div>
+      </div>
+      <!--/MODAL SIGN-UP-->
+      <!--MODAL RECOVERY-->
+      <div id="modal-recovery" class="modal container-login">
+        <div class="modal-content">
+          <form action="">
+            <div class="input-field col s10 offset-s1">
+              <input id="recovery-email" type="email" class="validate">
+              <label for="Password"><i class="fa fa-lock"></i>&nbsp; Email</label>
+            </div>
+            <button id="recovery" class="btn-flat">Recover&nbsp; <i class="fa fa-send"></i></button>
+          </form>
+        </div>
+        <a href="#!" class="modal-action modal-close text-gray right">
+          <i class="fa fa-times" class="responsive-img"></i>
+          <strong>Close</strong>
+        </a>
+      </div>
+      <!--/MODAL RECOVERY-->
+      <!--/MODALS-->
+    </main>
+
+
+
+
+
+
+
+    <!--SCRIPTS-->
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+  </html>
