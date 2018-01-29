@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lettering Life</title>
+  <link rel="shortcut icon" href="assets/images/mngrm-black.png">
   <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
   <link href="css/material-design-iconic-font.min.css" rel="stylesheet">
   <link href="css/materialize.css" rel="stylesheet" type="text/css">
@@ -13,58 +14,59 @@
 <body>
   <main>
     <!--SPLASH-->
-    <div class="container-fluid hide">
-      <div class="row">
+    <div class="container-fluid bkg-black view">
+      <div class="row center">
         <div class="col s10 offset-s1">
-          <img id="splash" src="assets/images/splash.jpg" alt="lettering"/>
+          <figure id="splash" class="mt-40">
+            <img  class="responsive-img main-logo " src="assets/images/letteringlife-ivory.png" alt="logo1">
+          </figure>
         </div>
       </div>
     </div>
     <!--/SPLASH-->
     <!--LOGIN-->
-    <section id="main-container">
+    <section id="login" class="view">
       <div class="container">
         <div class="row">
           <div class="col s10 offset-s1">
             <div class="row">
               <div class="col m5 hide-on-small-only">
-                <img id="index-logo" src="assets/images/index-logo.jpg" alt="logo"/>
+                <img id="index-logo" src="assets/images/cover.jpg" alt="logo"/>
               </div>
               <div class="col s17 m7">
                 <div class="row">
-                  <div class="signup-box">
-                    <h1 class="lettering">Lettering Life</h1>
-                    <h3 class="flow-text">More than letters</h3>
+                  <div class="login-box">
+                    <img id="index-logo" src="assets/images/letteringlife-aqua.png" alt="logo"/>
                     <form class="signup-form center">
                       <div class="divider"></div>
                       <div class="section">
                         <div class="row center-align">
-                          <a class="btn btn-fb hide-on-small-only social-sign">Login with Facebook</a>
-                          <a class="btn btn-fb hide-on-med-and-up"><i class="fa fa-facebook"></i>&nbsp;Login</a>
-                          <a class="btn btn-tw hide-on-small-only social-sign">Login with Twitter</a>
-                          <a class="btn btn-tw hide-on-med-and-up"><i class="fa fa-twitter"></i>&nbsp;Login</a>
+                          <a id="login-fb" class="btn btn-fb hide-on-small-only social-sign">Login with Facebook</a>
+                          <a id="login-fb2" class="btn btn-fb hide-on-med-and-up"><i class="fa fa-facebook"></i>&nbsp;Login</a>
+                          <a id="login-tw" class="btn btn-tw hide-on-small-only social-sign">Login with Twitter</a>
+                          <a id="login-tw2" class="btn btn-tw hide-on-med-and-up"><i class="fa fa-twitter"></i>&nbsp;Login</a>
                         </div>
                       </div>
                       <div class="divider"></div>
                       <div class="section mt-40 center-align">
                         <div class="left-align">
-                        <label for="user-name"><i class="fa fa-user"></i>&nbsp; User Name<input type="text" name="username"/></label>
-                        <label for="user-name"><i class="fa fa-lock"></i>&nbsp;Password<input type="password" name="password"/></label>
-                      </div>
-                        <div class="row mb-20">
-                          <p class="center">Did you forget your password?
+                          <label for="user-name"><i class="fa fa-user"></i>&nbsp; User Name<input type="text" name="username"/></label>
+                          <label for="user-name"><i class="fa fa-lock"></i>&nbsp;Password<input type="password" name="password"/></label>
+                        </div>
+                        <div class="row">
+                          <p class="center text-gray">Did you forget your password?
                             <a href="#modal-recovery" class="btn modal-trigger btn-flat bolder" id="recovery-btn">Recover it!</a>
                           </p>
                         </div>
-                        <button class="btn waves-effect waves-light " type="submit">Login</button>
+                        <button id="login-btn" class="btn waves-effect waves-light " type="submit">Login</button>
                       </div>
                     </form>
                   </div>
                 </div>
                 <div class="row mt-40">
-                  <div class="login-box left">
-                    <p>Don't you have an account yet?</p>
-                    <a id="signup" class="btn btn-flat modal-trigger text-align left" href="#modal-login">Sign Up</a>
+                  <div class="signup-box left">
+                    <p class="text-gray">Don't you have an account yet?</p>
+                    <a id="signup-btn" class="btn btn-flat modal-trigger text-align left" href="#modal-signup">Sign Up</a>
                   </div>
                 </div>
               </div>
@@ -74,105 +76,306 @@
       </div>
     </section>
     <!--/LOGIN -->
-    <!--NAVBAR-->
-    <!-- <section>
-      <nav>
-        <ul class="navbar">
-          <li><a>NEWS FEED</a></li>
-          <li><a>FRIENDS</a></li>
-          <li><a>SETTINGS</a></li>
-          <li><a class="right">LOGOUT</a></li>
-        </ul>
-      </nav>
-    </section> -->
-    <!--/NAVBAR-->
-    <!--FOOTER-->
-    <footer class="site-footer">
-      <div class="container">
-        <!-- languages-->
-        <div class="row">
-          <div class="col s12 l3 center-align">
-            <a class="dropdown-button btn btn-flat bolder mb-40" href="#" data-activates="language">Language</a>
-            <ul id="language" class="dropdown-content">
-              <li><a href="#!">English</a></li>
-              <li><a href="#!">Spanish</a></li>
-            </ul>
-          </div>
-        <!-- /languages-->
-        <!--copyright-->
-        <div class="row center">
-          <div class="col s12 center mt-40">
-            &copy;Laboratoria 2018
-          </div>
+    <!--NAV BAR-->
+    <nav id="principal-nav" class="header bkg-aqua2 text-ivory ">
+      <!--DESKTOP MENU-->
+      <div class="container ">
+        <div class="nav-wrapper ">
+          <a href="#" class="brand-logo nav-logo"><img src="assets/images/llifeivory.png" alt="logo-ivory"></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class=" fa fa-bars fa-2x text-ivory"></i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a id="home-btn" href="#home"><i class="fa fa-home text-ivory"></i></a></li>
+            <li><a id="profile-btn" href="#home"><i class="fa fa-user text-ivory"></i></a></li>
+            <li><a id="friends-btn" href="#friends"><i class="fa fa-users text-ivory"></i></a></li>
+            <li><a id="logout-btn" href="#modal1" class="btn btn-flat" id="logout-nav">Logout</a></li>
+          </ul>
+          <!--/DESKTOP MENU-->
+          <!--MOBILE MENU-->
+          <ul class="side-nav col s6 m3 bkg-aqua2" id="mobile-demo">
+            <li><a id="home-btn" href="#home" class="text-ivory">Home<i class="fa fa-home"></i></a></li>
+            <li><a id="profile-btn" href="#profile" class="text-ivory">Profile<i class="fa fa-user"></i></a></li>
+            <li><a id="friends-btn" href="#friends" class="text-ivory">Friends<i class="fa fa-users"></i></a></li>
+            <li><a id="logout-btn" href="#modal1" class="btn text-ivory" id="logout-nav2">Logout</a></li>
+          </ul>
+          <!--/MOBILE MENU-->
         </div>
-        <!--/copyright-->
       </div>
-    </footer>
-    <!--/FOOTER-->
-    <!--MODALS-->
-    <!--MODAL SIGN-UP-->
-    <div id="modal-login" class="modal container-login center responsive flow-text">
-      <div class="modal-content mt-40">
-        <h3 class="lettering">Lettering Life</h3>
-        <h5 class="flow-text mb-20">More than letters</h5>
-        <form class="signup-form center">
-          <div class="divider"></div>
-          <div class="section ">
-            <div class="row center-align">
-              <a class="btn btn-fb hide-on-small-only social-sign">Sign Up with Facebook</a>
-              <a class="btn btn-fb hide-on-med-and-up"><i class="fa fa-facebook"></i>&nbsp;Sign Up</a>
-              <a class="btn btn-tw hide-on-small-only social-sign">Sign Up with Twitter</a>
-              <a class="btn btn-tw hide-on-med-and-up"><i class="fa fa-twitter"></i>&nbsp;Sign Up</a>
+    </nav>
+    <!--/NAV BAR-->
+    <!--HOME-->
+    <section id="home" class="container-fluid view">
+      <!--USER COVER-->
+      <div id="user-cover" class="container-fluid">
+        <div  class="row center-align">
+          <figure class="col s12">
+            <img class="responsive-img" src="assets/images/user-cover.jpg" alt="">
+          </figure>
+        </div>
+      </div>
+      <!--/USER COVER-->
+      <!--NEW POST-->
+      <article id="posting" class="view-section">
+        <div class="row">
+          <div class="container">
+            <div class="card-panel">
+              <div class="card-content ">
+                <form id="create-post">
+                  <div class="form-group">
+                    <label for="post" class="new-post">Your post</label>
+                    <textarea id="new-post" class="form-control" placeholder="Sharing..." rows="3" autofocus></textarea>
+                  </div>
+                  <div class="row mt-20">
+                    <div class="col s6 m3 l2">
+                      <label id="upload" for="file" class="btn btn-flat  mb-20">
+                        <input type="file" name="file" value="" class="upload right" id="file" accept="image/*">
+                        <i class="fa fa-picture" aria-hidden="true"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s6 m3">
+                      <button id="post-btn" class="btn btn-flat left mt-20" disabled >Share</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
-          <div class="divider"></div>
-          <form>
-            <div class="input-field col s6 offset-s3 mt-20">
-              <input id="user-name" type="text" class="validate">
-              <label for="user-name"><i class="fa fa-user"></i>&nbsp; Full name</label>
-            </div>
-            <div class="input-field col s6 offset-s3">
-              <input id="UserName" type="text" class="validate">
-              <label for="UserName"><i class="fa fa-star"></i>&nbsp; User name</label>
-            </div>
-            <div class="input-field col s6 offset-s3 mt-20">
-              <input id="email" type="email" class="validate">
-              <label for="email"><i class="fa fa-envelope"></i>&nbsp; Email</label>
-            </div>
-            <div class="input-field col s6 offset-s3 mt-20">
-              <input id="Password" type="password" class="validate">
-              <label for="Password"><i class="fa fa-lock"></i>&nbsp; Password</label>
-            </div>
-            <button class="btn">SIGN UP</button>
-          </form>
         </div>
+      </article>
+      <!--/NEW POST-->
+      <!--TIME LINE-->
+      <article id="timeline" class="view-section">
         <div class="row">
+          <div class="container">
+            <div class="card-panel bkg-white">
+              <div class="card-title">
+                <small><span class="left">Posted by
+                  <img class="user-pic"/>user pic
+                  <p id="posted-by" class="post-title text-gray">Dummy Name</p></span></small>
+                  <small><span class="right">Date
+                    <p id="post-date" class="post-title text-gray">Dummy Date</p></span></small>
+                  </div>
+                  <div class="card-content mt-40 center">
+                    <div class="card-image">
+                      <img class="responsive-img" src="assets/images/timeline-dummy.jpg"/>
+                    </div>
+                  </div>
+                  <div class="card-footer center">
+                    <nav class="bkg-aqua1 ">
+                      <ul class="col s10 offset-s1 left">
+                        <li><a href="#" class=""><i class="fa fa-heart"></i></a></li>
+                        <li><a href="#" class=""><i class="fa fa-comment"></i></a></li>
+                        <li><a href="#" class=""><i class="fa fa-send"></i></a></li>
+                        <li><a href="#" class=""><i class="fa fa-plus"></i></a></li>
+                        <li><a href="#" class=""><i class="fa fa-download"></i></a></li>
+                        <li><a href="#" class=""><i class="fa fa-trash-o"></i></a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!--/TIME LINE-->
+        <!--/HOME-->
+
+        <!--PROFILE-->
+        <section id="profile" class="view">
+          <div class="container-fluid">
+            <div class="row center">
+              <div class="col s10 offset-s1">
+                <h3>Your Profile</h3>
+                <div class="row center">
+                  <div class="cos s10 offset-s1">
+                    <figure id="user-pic" class="profile-pic">Profile Picture
+                    </figure>
+                  </div>
+                </div>
+                <div class="row center">
+                  <div class="cos s10 offset-s1">
+                    <div class="">Username
+                    </div>
+                  </div>
+                </div>
+                <div class="row center">
+                  <div class="cos s10 offset-s1">
+                    <div class="">
+                      <h5>Email:</h5>
+                      <a>dummy@loremipsum.com</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="cos s10 offset-s1 center">
+                    <nav id="social-profile" class="bkg-aqua1">
+                      <ul class="nav-content center-align">
+                        <li><a><i class="fa fa-linkedin text-ivory"></i></a></li>
+                        <li><a><i class="fa fa-behance text-ivory"></i></a></li>
+                        <li><a><i class="fa fa-instagram text-ivory"></i></a></li>
+                        <li><a><i class="fa fa-twitter text-ivory"></i></a></li>
+                        <li><a><i class="fa fa-facebook text-ivory"></i></a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/PROFILE-->
+        <!--FRIENDS-->
+        <section id="friends" class="bkg-ivory view">
+          <div class="container-fluid">
+            <div class="row center">
+              <div class="col s10 offset-s1">
+
+                <h3>Your Friends</h3>
+
+                <div class="row center">
+                  <div class="cos s10 offset-s1">
+                    <div class="">Profile Picture
+                      Username
+                    </div>
+                  </div>
+                </div>
+                <div class="row center">
+                  <div class="cos s10 offset-s1">
+                    <div class="">Direct Message
+                      Delete
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/FRIENDS-->
+        <!-- LOGOUT-->
+        <section id="logout" class="bkg-ivory view">
+          <div class="container-fluid bkg-black">
+            <div class="row center">
+              <div class="col s10 offset-s1">
+                <figure id="logout-logo" class="mt-40">
+                  <img  class="responsive-img main-logo " src="assets/images/letteringlife-ivory.png" alt="logo1">
+                </figure>
+                <div class="col s12 center mt-40 mb-40 text-aqua2">
+                  &copy;Laboratoria 2018
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/LOGOUT-->
+        <!--FOOTER-->
+        <footer class="site-footer">
+          <div class="container">
+            <!-- languages-->
+            <div class="row">
+              <div class="col s12 l3 center-align">
+                <a id="language-btn" class="dropdown-button btn btn-flat bolder mb-40" href="#" data-activates="language">Language</a>
+                <ul id="language" class="dropdown-content">
+                  <li><a href="#!">English</a></li>
+                  <li><a href="#!">Spanish</a></li>
+                </ul>
+              </div>
+              <!-- /languages-->
+              <!--copyright-->
+              <div class="row center">
+                <div class="col s12 center mt-40 text-aqua2">
+                  &copy;Laboratoria 2018
+                </div>
+              </div>
+              <!--/copyright-->
+            </div>
+          </div>
+        </footer>
+        <!--/FOOTER-->
+        <!--MODALS-->
+        <!--MODAL SIGN-UP-->
+        <div id="modal-signup" class="modal col s10 offset-1 center responsive flow-text">
+          <div class="modal-content mt-0">
+            <img id="signup-logo" src="assets/images/letteringlife-aqua.png" alt="logo"/>
+            <form class="signup-form center">
+              <div class="divider"></div>
+              <div class="section ">
+                <div class="row center-align">
+                  <a class="btn btn-fb hide-on-small-only social-sign">Sign Up with Facebook</a>
+                  <a class="btn btn-fb hide-on-med-and-up"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;Sign Up</a>
+                  <a class="btn btn-tw hide-on-small-only social-sign">Sign Up with Twitter</a>
+                  <a class="btn btn-tw hide-on-med-and-up"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;Sign Up</a>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="input-field col s6 offset-s3 mt-20">
+                <input id="user-name" type="text" class="validate">
+                <label for="user-name"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; Full name</label>
+              </div>
+              <div class="input-field col s6 offset-s3">
+                <input id="UserName" type="text" class="validate">
+                <label for="UserName"><i class="fa tar" aria-hidden="true"></i>&nbsp; User name</label>
+              </div>
+              <div class="input-field col s6 offset-s3 mt-20">
+                <input id="email" type="email" class="validate">
+                <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; Email</label>
+              </div>
+              <div class="input-field col s6 offset-s3 mt-20">
+                <input id="Password" type="password" class="validate">
+                <label for="Password"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp; Password</label>
+              </div>
+              <h5 class="left mb-20">
+                <input type="checkbox" id="terms" />
+                <label for="terms">I agree to <a href="#modal-terms" class="btn modal-trigger btn-flat btn-theme-3 bolder"><small class="text-aqua2">Terms of service</small></a></label>
+              </h5>
+              <button class="btn">SIGN UP</button>
+            </form>
+          </div>
+          <div class="row">
+            <a href="#!" class="modal-action modal-close text-gray right">
+              <i class="fa fa-times responsive-img" aria-hidden="true"></i>
+              <strong>Close</strong>
+            </a>
+          </div>
+        </div>
+        <!--/MODAL SIGN-UP-->
+        <!--MODAL RECOVERY-->
+        <div id="modal-recovery" class="modal container-login">
+          <div class="modal-content center">
+            <img id="recovery-logo" src="assets/images/llife-black.png" alt="logo"/>
+            <form action="" class="mt-40">
+              <div class="input-field col s10 offset-s1">
+                <input id="recovery-email" type="email" class="validate">
+                <label for="Password"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp; Email</label>
+              </div>
+              <button id="recovery" class="btn-flat">Recover&nbsp; <i class="fa fa-send" aria-hidden="true"></i></button>
+            </form>
+          </div>
           <a href="#!" class="modal-action modal-close text-gray right">
-            <i class="fa fa-times responsive-img"></i>
+            <i class=" responsive-imgfa fa-times" aria-hidden="true"></i>
             <strong>Close</strong>
           </a>
         </div>
-      </div>
-      <!--/MODAL SIGN-UP-->
-      <!--MODAL RECOVERY-->
-      <div id="modal-recovery" class="modal container-login">
-        <div class="modal-content">
-          <form action="">
-            <div class="input-field col s10 offset-s1">
-              <input id="recovery-email" type="email" class="validate">
-              <label for="Password"><i class="fa fa-lock"></i>&nbsp; Email</label>
-            </div>
-            <button id="recovery" class="btn-flat">Recover&nbsp; <i class="fa fa-send"></i></button>
-          </form>
+        <!--/MODAL RECOVERY-->
+        <div id="modal-terms" class="modal container-terms">
+          <div class="modal-content">
+            <img id="index-logo" src="assets/images/llife-black.png" alt="logo"/>
+            <h5>Terms & Conditions</h5>
+            <p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <a href="#!" class="modal-action modal-close text-gray right">
+            <i class=" responsive-imgfa fa-times" aria-hidden="true"></i>
+            <strong>Close</strong>
+          </a>
         </div>
-        <a href="#!" class="modal-action modal-close text-gray right">
-          <i class="fa fa-times" class="responsive-img"></i>
-          <strong>Close</strong>
-        </a>
-      </div>
-      <!--/MODAL RECOVERY-->
-      <!--/MODALS-->
-    </main>
+        <!--/MODAL RECOVERY-->
+        <!--/MODALS-->
+      </main>
 
 
 
@@ -180,11 +383,11 @@
 
 
 
-    <!--SCRIPTS-->
-    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/app.js"></script>
-  </body>
-  </html>
+      <!--SCRIPTS-->
+      <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+      <script src="js/jquery.js"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/app.js"></script>
+    </body>
+    </html>
