@@ -21,29 +21,35 @@ $(document).ready(function(e){
   $('.modal').modal();
   //Nav, Modals and Select End//
   //Splash Page//
-  $loginSection.hide();
-  $signupSection.hide();
-  $homeSection.hide();
-  $profileSection.hide();
-  $friendsSection.hide();
-  $navBar.hide();
-  $logout.hide();
-  $splashSection.fadeOut(2000, function() {
-  $loginSection.fadeIn(3000);
-  });
+  // $loginSection.hide();
+  // $signupSection.hide();
+  // $homeSection.hide();
+  // $profileSection.hide();
+  // $friendsSection.hide();
+  // $navBar.hide();
+  // $logout.hide();
+  // $splashSection.fadeOut(2000, function() {
+  // $loginSection.fadeIn(3000);
+  // });
 
 });
 //Splash Page End//
 //FIREBASE//
-// var config = {
-//   apiKey: "",
-//   authDomain: "",
-//   databaseURL: "",
-//   projectId: "",
-//   storageBucket: "",
-//   messagingSenderId: ""
-// };
-// firebase.initializeApp(config);
+
+
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCVcausjRwZtoyt5u43LHPa_lhuHEWpxas",
+    authDomain: "letteringlife-98ae6.firebaseapp.com",
+    databaseURL: "https://letteringlife-98ae6.firebaseio.com",
+    projectId: "letteringlife-98ae6",
+    storageBucket: "letteringlife-98ae6.appspot.com",
+    messagingSenderId: "354310615902"
+  };
+  firebase.initializeApp(config);
+
+//
 
 //NAVIGATION//
 
