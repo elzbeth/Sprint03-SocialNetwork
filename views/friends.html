@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lettering Life</title>
+  <link rel="shortcut icon" href="../assets/images/mngrm-black.png">
+  <link href="../css/materialize.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/material-design-iconic-font.min.css" rel="stylesheet">
+  <link href="../css/materialize.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+  <link href="../css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <main>
+    <!--NAV BAR-->
+    <nav id="principal-nav" class="header bkg-aqua2 text-ivory ">
+      <!--DESKTOP MENU-->
+      <div class="container ">
+        <div class="nav-wrapper ">
+          <a href="#" class="brand-logo nav-logo"><img src="../assets/images/llifeivory.png" alt="logo-ivory"></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class=" fa fa-bars fa-2x text-ivory"></i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a id="home-btn" href="home.html"><i class="fa fa-home text-ivory"></i></a></li>
+            <li><a id="profile-btn" href="profile.html"><i class="fa fa-user text-ivory"></i></a></li>
+            <li><a id="friends-btn" href="friends.html"><i class="fa fa-users text-ivory"></i></a></li>
+            <li><a id="settings-btn" href="settings.html" class="text-ivory"><i class="fa fa-file"></i></a></li>
+            <li><a id="logout-btn" href="logout.html" class="btn btn-flat text-ivory" id="logout-nav">Logout</a></li>
+          </ul>
+          <!--/DESKTOP MENU-->
+          <!--MOBILE MENU-->
+          <ul class="side-nav col s6 m3 bkg-aqua2" id="mobile-demo">
+            <li><a id="home-btn" href="home.html" class="text-ivory">Home<i class="fa fa-home"></i></a></li>
+            <li><a id="profile-btn" href="profile.html" class="text-ivory">Profile<i class="fa fa-user"></i></a></li>
+            <li><a id="friends-btn" href="friends.html" class="text-ivory">Friends<i class="fa fa-users"></i></a></li>
+            <li><a id="settings-btn" href="settings.html" class="text-ivory">Settings<i class="fa fa-file"></i></a></li>
+            <li><a id="logout-btn" href="logout.html" class="btn text-ivory" id="logout-nav2">Logout</a></li>
+          </ul>
+          <!--/MOBILE MENU-->
+        </div>
+      </div>
+    </nav>
+    <!--/NAV BAR-->
+    <!--FRIENDS-->
+    <section id="friends" class="bkg-ivory view">
+      <div class="container-fluid">
+        <div class="row center">
+          <div class="col s10 offset-s1">
+            <h3>Your Friends</h3>
+            <!--dummy-->
+            <div class="row center">
+              <div class="col s10 offset-s1">
+                <div class="card-panel">
+                  <div class="col s12 m6">
+                    <figure id="user-pic" class="profile-pic">
+                      <img  src="../assets/images/user-dummy.jpg" alt="">
+                    </figure>
+                  </div>
+                  <div class="col s12 m6">
+                    <h5>Username</h5>
+                  </div>
+                  <div class="row center">
+                    <div class="col s10 offset-s1">
+                      <div class="friend-contact center">
+                        <a class="btn btn-large btn-flat"><i class="fa fa-envelope text-aqua2"></i></a>
+                        <a class="btn btn-large btn-flat"><i class="fa fa-trash text-aqua2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--dummy-->
+            <!--dummy-->
+            <div class="row center">
+              <div class="col s10 offset-s1">
+                <div class="card-panel">
+                  <div class="col s12 m6">
+                    <figure id="user-pic" class="profile-pic">
+                      <img  src="../assets/images/user-dummy.jpg" alt="">
+                    </figure>
+                  </div>
+                  <div class="col s12 m6">
+                    <h5>Username</h5>
+                  </div>
+                  <div class="row center">
+                    <div class="col s10 offset-s1">
+                      <div class="friend-contact center">
+                        <a class="btn btn-large btn-flat"><i class="fa fa-envelope text-aqua2"></i></a>
+                        <a class="btn btn-large btn-flat"><i class="fa fa-trash text-aqua2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--dummy-->
+          </section>
+          <!--/FRIENDS-->
+          <!--FOOTER-->
+          <footer class="site-footer">
+            <div class="container">
+              <!-- languages-->
+              <div class="row">
+                <div class="col s12 l3 center-align">
+                  <a id="language-btn" class="dropdown-button btn btn-flat bolder mb-40" href="#" data-activates="language">Language</a>
+                  <ul id="language" class="dropdown-content">
+                    <li><a href="#!">English</a></li>
+                    <li><a href="#!">Spanish</a></li>
+                  </ul>
+                </div>
+                <!-- /languages-->
+                <!--copyright-->
+                <div class="row center">
+                  <div class="col s12 center mt-40 ">
+                    <a href="www.laboratoria.la" class="text-aqua2">&copy;Laboratoria 2018</a>
+                  </div>
+                </div>
+                <!--/copyright-->
+              </div>
+            </div>
+          </footer>
+          <!--/FOOTER-->
+        </main>
+
+
+
+
+
+
+
+        <!--SCRIPTS-->
+        <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/app.js"></script>
+      </body>
+      </html>

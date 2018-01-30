@@ -56,6 +56,10 @@ label{
 	display: none;
 }
 
+#logout{
+	height: 100vh;
+}
+
 .row{
 	height: auto;
 	margin:0;
@@ -327,19 +331,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 	padding: 5px;
 }
 
-#main-page {
-	background-image: url(../assets/images/hero.gif);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	width:inherit;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
-}
 
 
 /*SPLASH*/
@@ -438,14 +429,14 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 	font-size: .9rem;
 }
 
-/* USER-DATA */
+/*PROFILE*/
 
 .fa-user, .fa-envelope, .fa-check{
 	color:#72c4b9;
 }
 
 #profile-btn i.fa-user{
-	color:#fefee7;
+	color:inherit;
 }
 
 .fa-user:hover, .fa-envelope:hover, .fa-check:hover,
@@ -460,10 +451,21 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 	color:#fefee7;
 }
 
-/* HOME */
+#user-pic img{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
 
+/* HOME */
 #user-cover img{
 	background-image: url(assets/images/user-cover.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+/*LOGOUT*/
+
+#logout-logo{
+	margin-top: 30vh;
 }
