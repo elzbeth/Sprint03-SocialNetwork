@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lettering Life</title>
+  <link rel="shortcut icon" href="../assets/images/mngrm-black.png">
+  <link href="../css/materialize.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/material-design-iconic-font.min.css" rel="stylesheet">
+  <link href="../css/materialize.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+  <link href="../css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <main>
+    <!--NAV BAR-->
+    <nav id="principal-nav" class="header bkg-aqua2 text-ivory ">
+      <!--DESKTOP MENU-->
+      <div class="container ">
+        <div class="nav-wrapper ">
+          <a href="#" class="brand-logo nav-logo"><img src="../assets/images/llifeivory.png" alt="logo-ivory"></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class=" fa fa-bars fa-2x text-ivory"></i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a id="home-btn" href="home.html"><i class="fa fa-home text-ivory"></i></a></li>
+            <li><a id="profile-btn" href="profile.html"><i class="fa fa-user text-ivory"></i></a></li>
+            <li><a id="friends-btn" href="friends.html"><i class="fa fa-users text-ivory"></i></a></li>
+            <li><a id="settings-btn" href="settings.html" class="text-ivory"><i class="fa fa-file"></i></a></li>
+            <li><a id="logout-btn" href="logout.html" class="btn btn-flat text-ivory" id="logout-nav">Logout</a></li>
+          </ul>
+          <!--/DESKTOP MENU-->
+          <!--MOBILE MENU-->
+          <ul class="side-nav col s6 m3 bkg-aqua2" id="mobile-demo">
+            <li><a id="home-btn" href="home.html" class="text-ivory">Home<i class="fa fa-home"></i></a></li>
+            <li><a id="profile-btn" href="profile.html" class="text-ivory">Profile<i class="fa fa-user"></i></a></li>
+            <li><a id="friends-btn" href="friends.html" class="text-ivory">Friends<i class="fa fa-users"></i></a></li>
+            <li><a id="settings-btn" href="settings.html" class="text-ivory">Settings<i class="fa fa-file"></i></a></li>
+            <li><a id="logout-btn" href="logout.html" class="btn text-ivory" id="logout-nav2">Logout</a></li>
+          </ul>
+          <!--/MOBILE MENU-->
+        </div>
+      </div>
+    </nav>
+    <!--/NAV BAR-->
+    <!--SETTINGS-->
+    <section id="home" class="container-fluid view">
+      <div class="row">
+        <div class="col s10 offset-s1 m6 offset-m3">
+          <div id="user-data"class="card-panel">
+            <div class="row">
+            <label for="Username">Your username (required).</label>
+              <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+                <i class="fa fa-edit"></i>
+              </a>
+              <input type="text" name="username" value="">
+          </div>
+            <div class="row">
+            <label for="Email">Your email (required).</label>
+            <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+              <i class="fa fa-edit"></i>
+            </a>
+              <input type="text" name="email" value="">
+          </div>
+            <div class="row">
+            <label for="Password">Your password (required).</label>
+            <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+              <i class="fa fa-edit"></i>
+            </a>
+              <input type="text" name="password" value="">
+          </div>
+            <div class="row">
+            <label for="Confirm Password">Confirm your password</label>
+            <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+              <i class="fa fa-edit"></i>
+            </a>
+              <input type="text" name="confirm-password" value="">
+          </div>
+            <div class="row">
+            <label for="Facebook-Account">Facebook Account (optional).</label>
+            <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+              <i class="fa fa-edit"></i>
+            </a>
+              <input type="text" name="facebook-account" value="">
+          </div>
+            <div class="row">
+            <label for="Twitter-Account">Twitter Account (optional).</label>
+            <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+              <i class="fa fa-edit"></i>
+            </a>
+              <input type="text" name="twitter-account" value="">
+          </div>
+            <div class="row">
+            <label for="Instagram-Account">Instagram Account (optional).</label>
+            <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+              <i class="fa fa-edit"></i>
+            </a>
+              <input type="text" name="instagram-account" value="">
+          </div>
+            <div class="row">
+            <label for="Behance-Account">Behance Account (optional).</label>
+            <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+              <i class="fa fa-edit"></i>
+            </a>
+              <input type="text" name="behance account" value="">
+          </div>
+            <div class="row">
+              <a class="btn btn-large bkg-aqua1">Save</a>
+            </div>
+          </div>
+          <div id="preferences"class="card-panel mt-20">
+          </label>Notifications
+          <select type="text" name="notifications" value="">
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<!--/SETTINGS-->
+<!--FOOTER-->
+<footer class="site-footer">
+  <div class="container">
+    <!-- languages-->
+    <div class="row">
+      <div class="col s12 l3 center-align">
+        <a id="language-btn" class="dropdown-button btn btn-flat bolder mb-40" href="#" data-activates="language">Language</a>
+        <ul id="language" class="dropdown-content">
+          <li><a href="#!">English</a></li>
+          <li><a href="#!">Spanish</a></li>
+        </ul>
+      </div>
+      <!-- /languages-->
+      <!--copyright-->
+      <div class="row center">
+        <div class="col s12 center mt-40 ">
+          <a href="www.laboratoria.la" class="text-aqua2">&copy;Laboratoria 2018</a>
+        </div>
+      </div>
+      <!--/copyright-->
+    </div>
+  </div>
+</footer>
+<!--/FOOTER-->
+
+
+<!--SCRIPTS-->
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/materialize.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

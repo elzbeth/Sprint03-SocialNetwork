@@ -7,12 +7,20 @@ $homeSection = $('#home');
 $profileSection = $('#profile');
 $friendsSection = $('#friends');
 $navBar = $('#principal-nav');
+$footer = $('#footer-site');
 $logout = $('#logout');
 //buttons//
 $logingBtn = $('#login-btn');
 $profileBtn = $('#profile-btn');
 $friendsBtn = $('#friends-btn');
 $logoutBtn = $('#logout-btn');
+$addFriendBtn = $('');
+$deleteFriendBtn = $('');
+$messageFriendBtn = $('');
+$commentBtn = $('');
+$likeBtn = $('');
+$postingBtn = $('');
+$uploadImageFileBtn = $('');
 //DOCUMENT//
 $(document).ready(function(e){
   //Nav, Modals and Select//
@@ -21,44 +29,28 @@ $(document).ready(function(e){
   $('.modal').modal();
   //Nav, Modals and Select End//
   //Splash Page//
-  // $loginSection.hide();
-  // $signupSection.hide();
-  // $homeSection.hide();
-  // $profileSection.hide();
-  // $friendsSection.hide();
-  // $navBar.hide();
-  // $logout.hide();
-  // $splashSection.fadeOut(2000, function() {
-  // $loginSection.fadeIn(3000);
-  // });
+  $splashSection.fadeOut(2000, function() {
+    $loginSection.fadeIn(3000);
+  });
 
 });
 //Splash Page End//
 //FIREBASE//
-
-
-
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCVcausjRwZtoyt5u43LHPa_lhuHEWpxas",
-    authDomain: "letteringlife-98ae6.firebaseapp.com",
-    databaseURL: "https://letteringlife-98ae6.firebaseio.com",
-    projectId: "letteringlife-98ae6",
-    storageBucket: "letteringlife-98ae6.appspot.com",
-    messagingSenderId: "354310615902"
-  };
-  firebase.initializeApp(config);
-
-//
+var config = {
+  apiKey: "AIzaSyCVcausjRwZtoyt5u43LHPa_lhuHEWpxas",
+  authDomain: "letteringlife-98ae6.firebaseapp.com",
+  databaseURL: "https://letteringlife-98ae6.firebaseio.com",
+  projectId: "letteringlife-98ae6",
+  storageBucket: "letteringlife-98ae6.appspot.com",
+  messagingSenderId: "354310615902"
+};
+firebase.initializeApp(config);
 
 //NAVIGATION//
 
 //showing home//
-
-
 $logingBtn.click(function() {
-
-console.log('home');
+  console.log('home');
 
 
 });
@@ -66,10 +58,7 @@ console.log('home');
 
 //showing profile//
 $profileBtn.click(function() {
-
-console.log('profile');
-
-
+  console.log('profile');
 
 });
 
@@ -77,16 +66,14 @@ console.log('profile');
 
 $friendsBtn.click(function() {
 
-console.log('friends');
-
-
+  console.log('friends');
 
 });
 
 //showing logout//
-$logingBtn.click(function() {
+$logoutBtn.click(function() {
 
-console.log('logout');
+  console.log('logout');
 
 
 
@@ -95,11 +82,31 @@ console.log('logout');
 //FUNCTIONS//
 
 //new post//
+//(twitter/firebase tutorial)
+
+//uploading & posting a photo
+//(twitter/firebase)
 
 //add friend//
+//(agenda de contactos/firebase tutorial)
 
 //delete friend//
+//(agenda de contactos/firebase tutorial)
+
+//showing friend list//
+//(food maps/firebase tutorial)
 
 //like//
+//investigate
+
 
 //tag friend//
+//investigate
+
+
+//login with facebook
+//(firebase tutorial)
+
+
+//login with twitter
+//(firebase tutorial)
