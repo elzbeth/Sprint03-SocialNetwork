@@ -57,3 +57,95 @@ Crear una red social para un emprendedor. Debe estr enfocada en los usuarios.
 19. Condensar información y realizar presentación.
 
 ## Consideraciones
+
+* Se agregaron modales de:
+  -Registro
+  -Recuperación de contraseña
+  -Términos y servicios
+
+* En la carpeta docs se puede encontrar la siguiente información:
+        UX:       Presentación PowerPoint Pitch del Proyecto.
+                  Sketches.
+                  Wireframes.
+        UI:       Style Guide.
+        Frontend: Backlog.   
+                  Pseudocódigo.
+
+## Sketches
+* Splash
+
+![splash](docs/ux/sketches/Splash.png)
+
+* Login
+
+![Login](docs/ux/sketches/Login.png)
+
+* Signup
+
+![Signup](docs/ux/sketches/Signup.png)
+
+* Recovery
+
+![Recovery](docs/ux/sketches/Recovery.png)
+
+* Home
+
+![Home](docs/ux/sketches/Home.png)
+
+* Profile
+
+![Profile](docs/ux/sketches/Profile.png)
+
+* Friends
+
+![Friends](docs/ux/sketches/Friends.png)
+
+* Settings
+
+![Settings](docs/ux/sketches/Settings.png)
+
+* Logout
+
+![Logout](docs/ux/sketches/Logout.png)
+
+## Wireframes
+
+* Splash
+
+![splash](docs/ux/wireframes/splash.jpg)
+
+* Login
+
+![login](docs/ux/wireframes/login.jpg)
+
+* Signup
+
+![signup](docs/ux/wireframes/signup.jpg)
+
+* Recovery
+
+![recovery](docs/ux/wireframes/recovery.jpg)
+
+* Home
+
+![home](docs/ux/wireframes/home.jpg)
+
+* Profile
+
+![profile](docs/ux/wireframes/Profile.jpg)
+
+* Friends
+
+![friends](docs/ux/wireframes/friends.jpg)
+
+* Settings
+
+![settings](docs/ux/wireframes/settings.jpg)
+
+* Logout
+
+![logout](docs/ux/wireframes/logout.jpg)
+
+## Style Guide
+
+![styleguide](docs/ui/llstyleguide.jpg)

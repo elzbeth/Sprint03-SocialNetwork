@@ -1,0 +1,33 @@
+Lettering Life App
+
+-Pantalla de bienvenida
+
+-Login con opción a entrar con redes sociales
+-Modal para registrarse
+-Modal términos y condiciones
+-Modal para recuperación de contraseña
+-Opción para cambio de idioma
+-Footer del sitio
+
+-Pantalla Home
+-Barra de navegación del sitio
+-Imagen de portada de usuario
+-Area para subir imagenes/postear mensajes
+-Área de newsfeed con las últimas publicaciones
+-Opciones en la publicaciones para:
+	-Dar like
+	-Comentar
+	-Republicar
+	-Eliminar
+
+-Pantalla Profile
+
+
+
+-Pantalla Friends
+
+
+-Pantalla Settings
+
+
+-Pantalla Logout
