@@ -464,6 +464,29 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 	background-size: cover;
 }
 
+/*GALLERY*/
+.kwicks-vertical {
+	width: 645px;
+	height: 645px;
+}
+.kwicks-vertical > li {
+	height: 145px;
+	margin-top: 5px;
+}
+.kwicks-horizontal {
+	width: 645px;
+	height: 100%;
+	text-align: center;
+	margin-left: 5vw;
+}
+.kwicks-horizontal > li {
+	height: 100%;
+	width: 145px;
+	float: left;
+	margin-left: 5px;
+	background-color: #72c4b9;
+}
+
 /*LOGOUT*/
 
 #logout-logo{

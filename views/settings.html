@@ -24,7 +24,8 @@
             <li><a id="home-btn" href="home.html"><i class="fa fa-home text-ivory"></i></a></li>
             <li><a id="profile-btn" href="profile.html"><i class="fa fa-user text-ivory"></i></a></li>
             <li><a id="friends-btn" href="friends.html"><i class="fa fa-users text-ivory"></i></a></li>
-            <li><a id="settings-btn" href="settings.html" class="text-ivory"><i class="fa fa-file"></i></a></li>
+            <li><a id="gallery-btn" href="gallery.html" class="text-ivory"><i class="fa fa-photo"></i></a></li>
+            <li><a id="settings-btn" href="settings.html" class="text-ivory"><i class="fa fa-gear"></i></a></li>
             <li><a id="logout-btn" href="logout.html" class="btn btn-flat text-ivory" id="logout-nav">Logout</a></li>
           </ul>
           <!--/DESKTOP MENU-->
@@ -33,7 +34,8 @@
             <li><a id="home-btn" href="home.html" class="text-ivory">Home<i class="fa fa-home"></i></a></li>
             <li><a id="profile-btn" href="profile.html" class="text-ivory">Profile<i class="fa fa-user"></i></a></li>
             <li><a id="friends-btn" href="friends.html" class="text-ivory">Friends<i class="fa fa-users"></i></a></li>
-            <li><a id="settings-btn" href="settings.html" class="text-ivory">Settings<i class="fa fa-file"></i></a></li>
+            <li><a id="gallery-btn" href="gallery.html" class="text-ivory">Gallery<i class="fa fa-photo"></i></a></li>
+            <li><a id="settings-btn" href="settings.html" class="text-ivory">Settings<i class="fa fa-gear"></i></a></li>
             <li><a id="logout-btn" href="logout.html" class="btn text-ivory" id="logout-nav2">Logout</a></li>
           </ul>
           <!--/MOBILE MENU-->
@@ -47,69 +49,93 @@
         <div class="col s10 offset-s1 m6 offset-m3">
           <div id="user-data"class="card-panel">
             <div class="row">
-            <label for="Username">Your username (required).</label>
+              <label for="Username">Your username (required).</label>
               <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
                 <i class="fa fa-edit"></i>
               </a>
               <input type="text" name="username" value="">
-          </div>
+            </div>
             <div class="row">
-            <label for="Email">Your email (required).</label>
-            <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
-              <i class="fa fa-edit"></i>
-            </a>
+              <label for="Email">Your email (required).</label>
+              <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+                <i class="fa fa-edit"></i>
+              </a>
               <input type="text" name="email" value="">
-          </div>
+            </div>
             <div class="row">
-            <label for="Password">Your password (required).</label>
-            <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
-              <i class="fa fa-edit"></i>
-            </a>
+              <label for="Password">Your password (required).</label>
+              <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+                <i class="fa fa-edit"></i>
+              </a>
               <input type="text" name="password" value="">
-          </div>
+            </div>
             <div class="row">
-            <label for="Confirm Password">Confirm your password</label>
-            <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
-              <i class="fa fa-edit"></i>
-            </a>
+              <label for="Confirm Password">Confirm your password</label>
+              <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+                <i class="fa fa-edit"></i>
+              </a>
               <input type="text" name="confirm-password" value="">
-          </div>
+            </div>
             <div class="row">
-            <label for="Facebook-Account">Facebook Account (optional).</label>
-            <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
-              <i class="fa fa-edit"></i>
-            </a>
+              <label for="Bio">Something about you (max 600 char.)</label>
+              <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+                <i class="fa fa-edit"></i>
+              </a>
+              <textarea name="bio" value="" class="mt-20 mb-20"></textarea>
+            </div>
+            <div class="row">
+              <label for="Facebook-Account">Facebook Account (optional).</label>
+              <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+                <i class="fa fa-edit"></i>
+              </a>
               <input type="text" name="facebook-account" value="">
-          </div>
+            </div>
             <div class="row">
-            <label for="Twitter-Account">Twitter Account (optional).</label>
-            <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
-              <i class="fa fa-edit"></i>
-            </a>
+              <label for="Twitter-Account">Twitter Account (optional).</label>
+              <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+                <i class="fa fa-edit"></i>
+              </a>
               <input type="text" name="twitter-account" value="">
-          </div>
+            </div>
             <div class="row">
-            <label for="Instagram-Account">Instagram Account (optional).</label>
-            <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
-              <i class="fa fa-edit"></i>
-            </a>
+              <label for="Instagram-Account">Instagram Account (optional).</label>
+              <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+                <i class="fa fa-edit"></i>
+              </a>
               <input type="text" name="instagram-account" value="">
-          </div>
+            </div>
             <div class="row">
-            <label for="Behance-Account">Behance Account (optional).</label>
-            <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
-              <i class="fa fa-edit"></i>
-            </a>
+              <label for="Behance-Account">Behance Account (optional).</label>
+              <a class="btn btn-flat bkg-aqua1 text-ivory right edit-preference">
+                <i class="fa fa-edit"></i>
+              </a>
               <input type="text" name="behance account" value="">
-          </div>
+            </div>
             <div class="row">
               <a class="btn btn-large bkg-aqua1">Save</a>
             </div>
           </div>
           <div id="preferences"class="card-panel mt-20">
-          </label>Notifications
-          <select type="text" name="notifications" value="">
+          <label>Notifications
+          <select id="notifications-menu">
+            <option value="">What's new</option>
+            <option id="opt-likes" class="noti-opt" value="0">Likes</option>
+            <option id="opt-comments" class="noti-opt" value="1">Comments</option>
+            <option id="opt-d-messages" class="noti-opt" value="2">Direct Messages</option>
+            <option id="opt-new-friend" class="noti-opt" value="3">New Friends</option>
           </select>
+          <div id="likes-notifications" class="card-content">
+            likes
+          </div>
+          <div id="comments-notifications" class="card-content">
+            comments
+          </div>
+          <div id="dm-notifications" class="card-content">
+            direct messages
+          </div>
+          <div id="newfriends-notifications" class="card-content">
+            new friends
+          </div>
         </label>
       </div>
     </div>
